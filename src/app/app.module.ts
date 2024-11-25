@@ -11,10 +11,12 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 
 import { HttpClientModule } from '@angular/common/http';
+import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    MenuLateralComponent
   ],
   imports: [
     BrowserModule,

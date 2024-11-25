@@ -7,5 +7,5 @@ export const environment = {
         storageBucket: "duofolio-66e9d.firebasestorage.app",
         messagingSenderId: "191778955541",
         appId: "1:191778955541:web:04dc8265cdafb93c83091c"
-      };
+      },
 };
