@@ -1,0 +1,44 @@
+.titulo{
+  color: var(--corPrincipal);
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 10px;
+  font-family: var(--fontePrincipal);
+}
+
+.botaoMenu {
+  background-color:var(--fundo);
+  color: var(--texto);
+
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  width: 90%;
+  height: 60px;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  text-align: left;
+
+  h2{
+    margin-top: 10px;
+    font-family: var(--fontePrincipal);
+    font-size: 14px;
+  }
+}
+
+.botaoMenu:hover {
+  background-color: var(--botaoMenuHover);
+}
+
+.botaoMenu:active {
+  border: 1px solid var(--botaoMenuActive);
+  color: var(--botaoMenuActive);
+}
+
+.icones{
+  width: 40px;
+  margin-right: 10px;
+}

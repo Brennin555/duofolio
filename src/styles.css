@@ -1,13 +1,33 @@
+@font-face {
+  font-family: 'FeatherBold';
+  src: url(assets/fonts/Feather-Bold/Feather-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN-Next-Rounded';
+  src: url(assets/fonts/DIN-Next-Rounded/DIN-Next-Rounded.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
   --fundo: #131f24;
   --texto: #dce6ec;
+  --corPrincipal: #61e002;
+  --cinza: #37464f;
+
+
   --unidade1: #ce82ff;
   --unidade2: #00e1ac;
   --unidade3: #61e002;
   --unidadeBloqueada: #37464f;
+  --botaoMenuHover: #202f36;
+  --botaoMenuActive: #49c0f8;
 
-  --fontePrincipal: 'Roboto', sans-serif;
-  --fonteSecundaria: 'Arial', sans-serif;
+  --fontePrincipal: 'FeatherBold', sans-serif;
+  --fonteSecundaria: 'DIN-Next-Rounded', sans-serif;
 
   --l1: -60px;
   --l2: -120px;
@@ -18,7 +38,15 @@
 body {
   background-color: var(--fundo);
   color: var(--texto);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--fontePrincipal);
+}
+
+.containerPrincipal{
+  width: 45%;
+}
+
+.containerMenu{
+  width: 25%;
 }
 
 .centralizar{
@@ -59,8 +87,8 @@ body {
 }
 
 .cardUnidade{
-  width: 40%;
-  margin-left: 30%;
+  width: 90%;
+  margin-left: 5%;
   height: 60px;
 
   background-color: var(--unidade1);
@@ -114,6 +142,13 @@ body {
 
 .botao_sombra {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.riscoCinza{
+  /* fazer risco vertical cinza */
+  border-left: 1px solid var(--botaoMenuActive);
+  height: 100%;
+
 }
 
 html, body { height: 100%; }
