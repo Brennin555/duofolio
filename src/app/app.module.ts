@@ -12,11 +12,17 @@ import { AngularFireModule } from '@angular/fire/compat';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.component';
+import { TrajetoriaComponent } from './componentes/trajetoria/trajetoria.component';
+import { CardsNoticiasComponent } from './componentes/cards-noticias/cards-noticias.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
-    MenuLateralComponent
+    MenuLateralComponent,
+    TrajetoriaComponent,
+    CardsNoticiasComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +31,7 @@ import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.co
     AppRoutingModule,
     NoopAnimationsModule,
     MatIconModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

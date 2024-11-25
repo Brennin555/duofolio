@@ -1,19 +1,26 @@
 <h2 class="titulo"> brennofólio</h2>
-
 <div>
-  <button class="centralizar botaoMenu">
+  <button class="flex centralizar botaoMenu"
+  [ngClass]="{ 'botaoSelecionado': opcaoAtiva === 'trajetoria' }"
+  (click)="onOpcaoSelecionada('trajetoria')">
     <img src="../../../assets/icons/icons8-home-64.png" alt="duofolio" class="icones">
     <h2>TRAJETORIA</h2>
   </button>
-  <button class="centralizar botaoMenu">
+  <button class="flex centralizar botaoMenu"
+  [ngClass]="{ 'botaoSelecionado': opcaoAtiva === 'curriculo' }"
+  (click)="onOpcaoSelecionada('curriculo')">
     <img src="../../../assets/icons/icons8-scroll-64.png" alt="duofolio" class="icones">
     <h2>CURRÍCULO</h2>
   </button>
-  <button class="centralizar botaoMenu">
+  <button class="flex centralizar botaoMenu"
+  [ngClass]="{ 'botaoSelecionado': opcaoAtiva === 'projetos' }"
+  (click)="onOpcaoSelecionada('projetos')">
     <img src="../../../assets/icons/icons8-idea-64.png" alt="duofolio" class="icones">
     <h2>PROJETOS</h2>
   </button>
-  <button class="centralizar botaoMenu">
+  <button class="flex centralizar botaoMenu"
+  [ngClass]="{ 'botaoSelecionado': opcaoAtiva === 'contatos' }"
+  (click)="onOpcaoSelecionada('contatos')">
     <img src="../../../assets/icons/icons8-speech-bubble-64.png" alt="duofolio" class="icones">
     <h2>CONTATOS</h2>
   </button>

@@ -1,0 +1,55 @@
+.cardNoticia {
+  margin: 10px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 2px solid var(--cinza);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tituloNoticia {
+  font-family: var(--fontePrincipal);
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.icone{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.barra-progresso {
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  background-color: var(--cinza);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.progresso {
+  height: 100%;
+  background-color: var(--amarelo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--amareloEscuro);
+  font-weight: bold;
+  border-radius: 20px; /* Alinha com a barra externa */
+  transition: width 0.3s ease-in-out; /* Transição suave */
+}
+
+.progresso-texto {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Evita quebra de linha */
+}

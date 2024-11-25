@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent {
+  opcaoEscolhida: string = '';
 
+  opcoesMenu = [
+    "trajetoria",
+    "curriculo",
+    "projetos",
+    "contato"
+  ]
+
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.opcaoEscolhida = this.opcoesMenu[0];
+  }
+
+  selecionarOpcao(opcao: string): void {
+    this.opcaoEscolhida = opcao;
+    console.log('Opção selecionada:', opcao);
+  }
 }
