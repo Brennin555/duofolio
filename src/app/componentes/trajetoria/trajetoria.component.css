@@ -81,8 +81,9 @@
 }
 
 .botao_icone {
-  font-size: 30px;
-  font-weight: bold;
+  width: 100%;
+  /* font-size: 30px; */
+  /* font-weight: bold; */
 }
 
 .botao_sombra {

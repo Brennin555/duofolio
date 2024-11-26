@@ -7,6 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class CardLicaoComponent {
   @Input() indiceBotao!: number;
+  @Input() tituloCard!: string;
+  @Input() descricaoCard!: string;
+  @Input() dataCard!: string;
+  @Input() linkCard!: string;
 
   organizarClasseSeta(): string {
     if (true) {
