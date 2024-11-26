@@ -3,7 +3,6 @@
   width: 300px;
   height: 250px;
 
-  background-color: var(--unidade1);
   color: var(--texto);
 
   border-radius: 20px;
@@ -29,12 +28,15 @@
 .cardLicao::before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -10px; /* Ajuste para posicionar a seta acima do card */
   left: 50%;
   transform: translateX(-50%);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid var(--unidade1);
+  border-bottom: 15px solid transparent; /* Base padrão para a seta */
+  width: 0; /* Garante que não há largura além das bordas */
+  height: 0; /* Garante que não há altura além das bordas */
+  z-index: 2; /* Seta acima do card */
 }
 
 .cardLicao.r1::before {
@@ -45,7 +47,6 @@
   transform: translateX(-50%);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid var(--unidade1);
 }
 
 .cardLicao.r2::before {
@@ -56,7 +57,6 @@
   transform: translateX(-50%);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid var(--unidade1);
 }
 
 .cardLicao.l1::before {
@@ -67,7 +67,6 @@
   transform: translateX(-50%);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid var(--unidade1);
 }
 
 .cardLicao.l2::before {
@@ -78,5 +77,21 @@
   transform: translateX(-50%);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid var(--unidade1);
+  border-bottom: 15px solid transparent;
+}
+
+.cardLicao.cor1Seta::before {
+  border-bottom-color: var(--unidade1);
+}
+
+.cardLicao.cor2Seta::before {
+  border-bottom-color: var(--unidade2);
+}
+
+.cardLicao.cor3Seta::before {
+  border-bottom-color: var(--unidade3);
+}
+
+.cardLicao.cor4Seta::before {
+  border-bottom-color: var(--unidade4);
 }
