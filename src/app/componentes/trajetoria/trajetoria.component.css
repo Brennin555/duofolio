@@ -1,35 +1,36 @@
-.centralizar_l1{
+.centralizar_l1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: var(--l1);
 }
-.centralizar_l2{
+
+.centralizar_l2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: var(--l2);
 }
 
-.centralizar_r1{
+.centralizar_r1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: var(--r1);
 }
-.centralizar_r2{
+
+.centralizar_r2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: var(--r2);
 }
 
-.centraliza_topicos{
+.centraliza_topicos {
   width: 100%;
-  margin-left: 50%;
 }
 
-.cardUnidade{
+.cardUnidade {
   width: 90%;
   margin-left: 5%;
   height: 60px;
@@ -40,7 +41,7 @@
   padding: 10px;
 }
 
-.card_titulo{
+.card_titulo {
   color: var(--texto);
   font-family: var(--fontePrincipal);
 
@@ -48,7 +49,7 @@
   margin-bottom: 0px;
 }
 
-.card_subtitulo{
+.card_subtitulo {
   color: var(--texto);
   opacity: 0.7;
 
@@ -59,7 +60,7 @@
   margin-bottom: 0px;
 }
 
-.botaoLicao{
+.botaoLicao {
   background-color: var(--unidade1);
   color: var(--texto);
 
@@ -72,18 +73,26 @@
   margin-top: 15px;
 }
 
-.botaoLicao:hover{
+.botaoLicao:hover {
   height: 75px;
   width: 75px;
 
   margin-top: 20px;
 }
 
-.botao_icone{
+.botao_icone {
   font-size: 30px;
   font-weight: bold;
 }
 
 .botao_sombra {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.botao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }

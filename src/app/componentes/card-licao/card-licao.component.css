@@ -1,0 +1,82 @@
+.cardLicao {
+  z-index: 1;
+  width: 300px;
+  height: 250px;
+
+  background-color: var(--unidade1);
+  color: var(--texto);
+
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+  margin: 15px;
+
+  h2 {
+
+    font-family: var(--fontePrincipal);
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+    font-size: 20px;
+  }
+  h3 {
+    font-family: var(--fontePrincipal);
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.cardLicao::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--unidade1);
+}
+
+.cardLicao.r1::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 60%;
+  transform: translateX(-50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--unidade1);
+}
+
+.cardLicao.r2::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 70%;
+  transform: translateX(-50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--unidade1);
+}
+
+.cardLicao.l1::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 40%;
+  transform: translateX(-50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--unidade1);
+}
+
+.cardLicao.l2::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 30%;
+  transform: translateX(-50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--unidade1);
+}
