@@ -1,48 +1,18 @@
 <div class="cardNoticia">
 	<h2 class="tituloNoticia">Missões:</h2>
-	<div class="flex centralizar missao">
-		<img class="icone"
-			src="../../../assets/icons/icons8-fire-64_2.png">
-		<div class="missao">
-			<h3>Dias de UNIFEI</h3>
-			<div class="barra-progresso">
-				<div [style.width.%]="noticia?.porcentagemCompleta"
-					class="progresso">
-					<span class="progresso-texto">
-						{{(noticia?.totalDias ?? 0) - (noticia?.restante ?? 0) }} / {{ noticia?.totalDias ?? 0 }}
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-  <div class="flex centralizar missao">
-		<img class="icone"
-			src="../../../assets/icons/icons8-fire-64_2.png">
-		<div class="missao">
-			<h3>Matérias UNIFEI</h3>
-			<div class="barra-progresso">
-				<div [style.width.%]="noticia?.porcentagemCompleta"
-					class="progresso">
-					<span class="progresso-texto">
-						{{(noticia?.totalDias ?? 0) - (noticia?.restante ?? 0) }} / {{ noticia?.totalDias ?? 0 }}
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-  <div class="flex centralizar missao">
-		<img class="icone"
-			src="../../../assets/icons/icons8-fire-64_2.png">
-		<div class="missao">
-			<h3>Dias de Asimov Jr.</h3>
-			<div class="barra-progresso">
-				<div [style.width.%]="noticia?.porcentagemCompleta"
-					class="progresso">
-					<span class="progresso-texto">
-						{{(noticia?.totalDias ?? 0) - (noticia?.restante ?? 0) }} / {{ noticia?.totalDias ?? 0 }}
-					</span>
+	<div *ngFor="let noticia of noticias">
+		<div class="flex centralizar missao">
+			<img class="icone"
+				src="../../../assets/icons/{{noticia.icone}}">
+			<div class="missao">
+				<h3>{{noticia.titulo}}</h3>
+				<div class="barra-progresso">
+					<div [style.width.%]="noticia.porcentagemCompleta"
+						class="progresso">
+						<span class="progresso-texto">
+							{{noticia.totalDias - noticia.restante }} / {{ noticia.totalDias }}
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>

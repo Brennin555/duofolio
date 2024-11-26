@@ -44,12 +44,18 @@ body {
 }
 
 .containerPrincipal{
-  width: 45%;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .containerMenu{
   width: 222px;
   margin-left: 10px;
+}
+
+.containerMissoes{
+  margin-right: auto;
 }
 
 .flex{
