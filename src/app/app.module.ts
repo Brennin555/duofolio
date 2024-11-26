@@ -15,6 +15,7 @@ import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.co
 import { TrajetoriaComponent } from './componentes/trajetoria/trajetoria.component';
 import { CardsNoticiasComponent } from './componentes/cards-noticias/cards-noticias.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { CardLicaoComponent } from './componentes/card-licao/card-licao.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     PrincipalComponent,
     MenuLateralComponent,
     TrajetoriaComponent,
-    CardsNoticiasComponent
+    CardsNoticiasComponent,
+    CardLicaoComponent
   ],
   imports: [
     BrowserModule,

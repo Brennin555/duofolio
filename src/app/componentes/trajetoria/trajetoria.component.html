@@ -1,18 +1,19 @@
+<div class="cardUnidade">
+  <div>
+    <h3 class="card_subtitulo">2021, EM ANDAMENTO</h3>
+  </div>
+  <div>
+    <h2 class="card_titulo">Faculdade</h2>
+  </div>
+</div>
 
-  <div class="cardUnidade">
-    <div>
-      <h3 class="card_subtitulo">2021, EM ANDAMENTO</h3>
-    </div>
-    <div>
-      <h2 class="card_titulo">Faculdade</h2>
+<div class="centraliza_topicos">
+  <div *ngFor="let botao of botoes; let i = index" class="botao-container">
+    <button class="botaoLicao botao_sombra" [class]="organizarClasseBotoes(i)" (click)="trocarEstadoCard(i)">
+      <mat-icon class="botao_icone">done</mat-icon>
+    </button>
+    <div *ngIf="indiceBotao === i">
+      <app-card-licao class="flex justify-content-center" [indiceBotao]="indiceBotao"></app-card-licao>
     </div>
   </div>
-
-
-  <div class="centraliza_topicos">
-    <button class="botaoLicao botao_sombra centralizar"><mat-icon class="botao_icone">done</mat-icon></button>
-    <button class="botaoLicao botao_sombra centralizar_l1" ><mat-icon class="botao_icone">done</mat-icon></button>
-    <button class="botaoLicao botao_sombra centralizar_l2"><mat-icon class="botao_icone">done</mat-icon></button>
-    <button class="botaoLicao botao_sombra centralizar_l1" ><mat-icon class="botao_icone">done</mat-icon></button>
-    <button class="botaoLicao botao_sombra centralizar"><mat-icon class="botao_icone">done</mat-icon></button>
-  </div>
+</div>
