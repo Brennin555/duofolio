@@ -3,6 +3,7 @@ export interface Noticia {
   titulo: string;
   dataInicio: string;
   dataFim: string;
+  icone: string;
   restante: number;
   totalDias: number;
   porcentagemCompleta: number;
