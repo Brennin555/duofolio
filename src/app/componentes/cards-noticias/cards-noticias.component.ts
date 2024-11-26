@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Noticia } from 'src/app/interfaces/noticia';
 
 @Component({
   selector: 'app-cards-noticias',
@@ -7,17 +8,15 @@ import { Component } from '@angular/core';
 })
 export class CardsNoticiasComponent {
   progressValue: number = 0;
-  noticia:
-  {
-    dataInicio: string;
-    dataFim: string;
-    restante: number;
-    totalDias: number;
-    porcentagemCompleta: number;
-  } | undefined
+
+ noticias = [];
+
+  noticia: Noticia = {} as Noticia;
 
   ngOnInit() {
     this.noticia = {
+      id: 1,
+      titulo: 'Dias de UNIFEI',
       dataInicio: '2021-05-01',
       dataFim: '2025-12-20',
       totalDias: 0,

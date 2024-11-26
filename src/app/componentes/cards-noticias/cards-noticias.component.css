@@ -19,15 +19,21 @@
   color: var(--texto);
 }
 
+.missao{
+  width: 90%;
+  margin-left: 5%;
+}
+
 .icone{
   width: 40px;
   margin-right: 10px;
 }
 
 .barra-progresso {
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   max-width: 600px;
-  height: 40px;
+  height: 20px;
   background-color: var(--cinza);
   border-radius: 20px;
   position: relative;
