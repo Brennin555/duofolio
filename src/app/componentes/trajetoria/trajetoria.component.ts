@@ -118,7 +118,7 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 0;
     this.topico.nome = 'Ingresso na faculdade';
-    this.topico.descricao = 'Aprovado na UNIFEI - Universidade Federal de Itajubá';
+    this.topico.descricao = 'Aprovado na UNIFEI - Universidade Federal de Itajubá para o curso de Engenharia de Computação. Inicio das aulas remotas devido a pandemia';
     this.topico.data = "05/2021";
     this.topico.icone = 'school';
     this.topico.link = '';
@@ -130,17 +130,17 @@ export class TrajetoriaComponent {
     this.topico.nome = 'Desenvolvendo jogos em C';
     this.topico.descricao = 'Desenvolvendo jogos para as disciplinas de lógica de programação e algoritmos';
     this.topico.data = "09/2021";
-    this.topico.icone = 'school';
+    this.topico.icone = 'sports_esports';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
 
     this.topico = {} as Topico;
     this.topico.id = 2;
-    this.topico.nome = 'Participação em Olimpíada de Programação';
-    this.topico.descricao = '';
+    this.topico.nome = 'Participação em Maratona de Programação';
+    this.topico.descricao = 'Participai da XXVI Maratona de Programação - 2021 devido a matéria que eu fazia naquele semestre';
     this.topico.data = "10/2021";
-    this.topico.icone = 'sim_card';
+    this.topico.icone = 'timer';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -148,9 +148,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 3;
     this.topico.nome = 'Jogo de Estrutura de Dados';
-    this.topico.descricao = 'Jogo Free-Cell em C';
+    this.topico.descricao = 'Desenvolvi o jogo "Free-Cell" em C para a disciplina de Estrutura de Dados, cursada em meu segundo semestre na faculdade';
     this.topico.data = "12/2021";
-    this.topico.icone = 'videogame_asset';
+    this.topico.icone = 'gamepad';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -158,9 +158,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 4;
     this.topico.nome = 'Processo Trainee';
-    this.topico.descricao = 'Selecionado para o processo trainee na EJ Asimov Jr.';
+    this.topico.descricao = 'Selecionado para o processo trainee na EJ Asimov Jr. Participei do processo seletivo por incentivo de um amigo';
     this.topico.data = "12/2021";
-    this.topico.icone = 'work';
+    this.topico.icone = 'group';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -176,9 +176,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 0;
     this.topico.nome = 'Mudança para Itajubá/MG';
-    this.topico.descricao = 'Inicio das aulas presenciais';
+    this.topico.descricao = 'Inicio das aulas presenciais. Muita expectativa para a nova vida e o novo semestre';
     this.topico.data = "03/2022";
-    this.topico.icone = 'airport_shuttle';
+    this.topico.icone = 'location_on';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -186,9 +186,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 1;
     this.topico.nome = 'Efetivação';
-    this.topico.descricao = 'Efetivado como desenvolvedor de projetos mobile';
+    this.topico.descricao = 'Efetivado como desenvolvedor de projetos mobile, após longas semanas de capacitações';
     this.topico.data = "03/2022";
-    this.topico.icone = 'work';
+    this.topico.icone = 'check_circle';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -198,7 +198,7 @@ export class TrajetoriaComponent {
     this.topico.nome = 'Desenvolvimento de aplicativos mobile em Ionic/Angular';
     this.topico.descricao = 'Efetivado como desenvolvedor de projetos mobile';
     this.topico.data = "12/2022";
-    this.topico.icone = 'work';
+    this.topico.icone = 'smartphone';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -206,9 +206,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 3;
     this.topico.nome = 'Estudo de grafos e algoritmos de ordenação em C++';
-    this.topico.descricao = 'Efetivado como desenvolvedor de projetos mobile';
+    this.topico.descricao = 'Conhecendo Dijkstra, Bubble Sort, Quick Sort entre outros';
     this.topico.data = "07/2022";
-    this.topico.icone = 'work';
+    this.topico.icone = 'device_hub';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -217,9 +217,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 4;
     this.topico.nome = 'Estudo de padrões de projeto em Java';
-    this.topico.descricao = 'Efetivado como desenvolvedor de projetos mobile';
+    this.topico.descricao = 'Estudo de padrões de projeto em Java para melhorar a orientação a objeto e a qualidade do código';
     this.topico.data = "12/2022";
-    this.topico.icone = 'work';
+    this.topico.icone = 'design_services';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -237,9 +237,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 0;
     this.topico.nome = 'Promoção para gerente de Projetos Mobile';
-    this.topico.descricao = 'Desenvolvimento de aplicativo mobile para empresa de tecnologia';
+    this.topico.descricao = 'Eleito gerente de projetos mobile após um ano de empresa júnior e alguns projetos desenvolvidos';
     this.topico.data = "01/2023";
-    this.topico.icone = 'smartphone';
+    this.topico.icone = 'workspace_premium';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -247,9 +247,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 1;
     this.topico.nome = 'Aprendizado sobre banco de dados e MySQL';
-    this.topico.descricao = 'Desenvolvimento de aplicativo mobile para empresa de tecnologia';
+    this.topico.descricao = ' Estudos sobre banco de dados relacionais, modelagem de dados e SQL';
     this.topico.data = "01/2023";
-    this.topico.icone = 'smartphone';
+    this.topico.icone = 'storage';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -257,9 +257,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 2;
     this.topico.nome = 'Criação de novas capacitações para a equipe';
-    this.topico.descricao = 'Desenvolvimento de aplicativo mobile para empresa de tecnologia';
+    this.topico.descricao = 'Desenvolvimento de capacitações para os membros após um periodo sem projetos';
     this.topico.data = "01/2023";
-    this.topico.icone = 'smartphone';
+    this.topico.icone = 'school';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -267,19 +267,19 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 3;
     this.topico.nome = 'Publicação de aplicativos nas lojas Google Play e Apple Store';
-    this.topico.descricao = 'Desenvolvimento de aplicativo mobile para empresa de tecnologia';
+    this.topico.descricao = 'Estudo referente a publicação dos aplicativos para a entrega dos projetos finalizados';
     this.topico.data = "01/2023";
-    this.topico.icone = 'smartphone';
+    this.topico.icone = 'cloud_upload';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
 
     this.topico = {} as Topico;
     this.topico.id = 4;
-    this.topico.nome = 'Aprendizado sobre compiladores e interpretação de código em Python';
-    this.topico.descricao = 'Desenvolvimento de aplicativo mobile para empresa de tecnologia';
+    this.topico.nome = 'Aprendizado sobre compiladores em Python';
+    this.topico.descricao = 'Estudo sobre os aspectos léxico e sintático de compiladores, desenvolvendo um interpretador de código.';
     this.topico.data = "01/2023";
-    this.topico.icone = 'smartphone';
+    this.topico.icone = 'code';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -288,7 +288,7 @@ export class TrajetoriaComponent {
     // ------------------------------------------------- 2024 -------------------------------------------------
     this.unidade = {} as Unidade;
     this.unidade.id = 4;
-    this.unidade.nome = 'Novos desafios e responsabilidades';
+    this.unidade.nome = 'Grandes mudanças e novidades';
     this.unidade.periodo = "2024";
     this.unidade.topicos = [];
 
@@ -297,7 +297,7 @@ export class TrajetoriaComponent {
     this.topico.nome = 'Saída da empresa júnior';
     this.topico.descricao = 'Saída da empresa júnior após dois anos para novos desafios';
     this.topico.data = "03/2024";
-    this.topico.icone = '';
+    this.topico.icone = 'exit_to_app';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -305,19 +305,19 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 1;
     this.topico.nome = 'O começo de um novo projeto';
-    this.topico.descricao = 'Saída da empresa júnior após dois anos para novos desafios';
+    this.topico.descricao = 'Início do Gincana na Nota, uma nova parceria com frutos do ano anterior';
     this.topico.data = "03/2024";
-    this.topico.icone = '';
+    this.topico.icone = 'lightbulb';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
 
     this.topico = {} as Topico;
     this.topico.id = 2;
-    this.topico.nome = 'Aprendizado sobre inteligência artificial em python';
-    this.topico.descricao = 'Saída da empresa júnior após dois anos para novos desafios';
+    this.topico.nome = 'Aprendizado sobre IA em python';
+    this.topico.descricao = 'Aprofundamento sobre modelos de machine learning e deep learning, aplicados em exercícios com contextos reais';
     this.topico.data = "03/2024";
-    this.topico.icone = '';
+    this.topico.icone = 'psychology';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -325,9 +325,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 3;
     this.topico.nome = 'Inicio das operaçoes do projeto';
-    this.topico.descricao = 'Saída da empresa júnior após dois anos para novos desafios';
+    this.topico.descricao = 'Após todo o desenvolvimento, o projeto Gincana na Nota é publicado e começa a operar';
     this.topico.data = "09/2024";
-    this.topico.icone = '';
+    this.topico.icone = 'play_arrow';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
@@ -336,9 +336,9 @@ export class TrajetoriaComponent {
     this.topico = {} as Topico;
     this.topico.id = 4;
     this.topico.nome = 'Busca por uma vaga de estágio';
-    this.topico.descricao = 'Saída da empresa júnior após dois anos para novos desafios';
+    this.topico.descricao = 'Com toda esta jornada, planejo dar um passo a mais e buscar novos desafios';
     this.topico.data = "09/2024";
-    this.topico.icone = '';
+    this.topico.icone = 'search';
     this.topico.link = '';
 
     this.unidade.topicos.push(this.topico);
