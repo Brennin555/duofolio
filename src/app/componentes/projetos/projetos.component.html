@@ -1,0 +1,17 @@
+<div *ngFor="let grupo of projetosGeral; let i = index">
+  <div class="tituloGrupo">{{grupo.titulo}}</div>
+	<div *ngFor="let projeto of grupo.projetos; let j = index" class="cardProjeto" (click)="abrirLink(projeto.link)">
+		<div class="textosProjeto ">
+			<h2>{{projeto.nome}}</h2>
+			<p>
+				{{projeto.descricao}}
+			</p>
+		</div>
+
+		<div class="imagemProjeto">
+			<img src="../../assets/icons/{{projeto.imagem}}.png"
+				alt="{{projeto.imagem}}">
+		</div>
+
+	</div>
+</div>

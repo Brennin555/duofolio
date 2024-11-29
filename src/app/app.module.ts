@@ -16,6 +16,7 @@ import { TrajetoriaComponent } from './componentes/trajetoria/trajetoria.compone
 import { CardsNoticiasComponent } from './componentes/cards-noticias/cards-noticias.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CardLicaoComponent } from './componentes/card-licao/card-licao.component';
+import { ProjetosComponent } from './componentes/projetos/projetos.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CardLicaoComponent } from './componentes/card-licao/card-licao.componen
     MenuLateralComponent,
     TrajetoriaComponent,
     CardsNoticiasComponent,
-    CardLicaoComponent
+    CardLicaoComponent,
+    ProjetosComponent
   ],
   imports: [
     BrowserModule,
