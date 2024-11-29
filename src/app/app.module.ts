@@ -17,6 +17,7 @@ import { CardsNoticiasComponent } from './componentes/cards-noticias/cards-notic
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CardLicaoComponent } from './componentes/card-licao/card-licao.component';
 import { ProjetosComponent } from './componentes/projetos/projetos.component';
+import { PerfilComponent } from './componentes/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProjetosComponent } from './componentes/projetos/projetos.component';
     TrajetoriaComponent,
     CardsNoticiasComponent,
     CardLicaoComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
