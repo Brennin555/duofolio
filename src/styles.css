@@ -21,9 +21,10 @@
   --amareloEscuro:#cd7900;
 
 
-  --unidade1: #ce82ff;
-  --unidade2: #00e1ac;
-  --unidade3: #61e002;
+  --unidade1: #1cb0f6;
+  --unidade2: #cc348d;
+  --unidade3: #58cc02;
+  --unidade4: #ff4b4b;
   --unidadeBloqueada: #37464f;
   --botaoMenuHover: #202f36;
   --botaoMenuActive: #49c0f8;
@@ -76,6 +77,22 @@ body {
   border-left: 1px solid var(--botaoMenuActive);
   height: 100%;
 
+}
+
+.cor1Card {
+  background-color: var(--unidade1);
+}
+
+.cor2Card {
+  background-color: var(--unidade2);
+}
+
+.cor3Card {
+  background-color: var(--unidade3);
+}
+
+.cor4Card {
+  background-color: var(--unidade4);
 }
 
 html, body { height: 100%; }

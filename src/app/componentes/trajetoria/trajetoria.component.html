@@ -1,19 +1,28 @@
-<div class="cardUnidade">
-  <div>
-    <h3 class="card_subtitulo">2021, EM ANDAMENTO</h3>
-  </div>
-  <div>
-    <h2 class="card_titulo">Faculdade</h2>
-  </div>
-</div>
-
-<div class="centraliza_topicos">
-  <div *ngFor="let botao of botoes; let i = index" class="botao-container">
-    <button class="botaoLicao botao_sombra" [class]="organizarClasseBotoes(i)" (click)="trocarEstadoCard(i)">
-      <mat-icon class="botao_icone">done</mat-icon>
-    </button>
-    <div *ngIf="indiceBotao === i">
-      <app-card-licao class="flex justify-content-center" [indiceBotao]="indiceBotao"></app-card-licao>
+<div *ngFor="let unidade of unidades; let j=index">
+  <div class="cardUnidade" [class]="setColorCard(j)">
+    <div>
+      <h3 class="card_subtitulo">{{unidade.periodo}}</h3>
+    </div>
+    <div>
+      <h2 class="card_titulo">{{unidade.nome}}</h2>
     </div>
   </div>
+
+  <div class="centraliza_topicos">
+    <div *ngFor="let botao of unidade.topicos; let i = index" class="botao-container">
+    <button class="botaoLicao botao_sombra" [class]="organizarClasseBotoes(i,j)" (click)="trocarEstadoCard(i,j)">
+      <mat-icon class="botao_icone">{{botao.icone}}</mat-icon>
+    </button>
+    <div *ngIf="indiceBotao === i && indiceUnidade === j">
+      <app-card-licao class="flex justify-content-center"
+      [indiceBotao]="indiceBotao"
+      [indiceUnidade]="j"
+      [tituloCard]="botao.nome"
+      [descricaoCard]="botao.descricao"
+      [dataCard]="botao.data"
+      [linkCard]="botao.link"
+      ></app-card-licao>
+    </div>
+  </div>
+</div>
 </div>

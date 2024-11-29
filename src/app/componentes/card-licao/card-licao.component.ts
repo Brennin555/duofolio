@@ -7,38 +7,51 @@ import { Component, Input } from '@angular/core';
 })
 export class CardLicaoComponent {
   @Input() indiceBotao!: number;
+  @Input() indiceUnidade!: number;
+  @Input() tituloCard!: string;
+  @Input() descricaoCard!: string;
+  @Input() dataCard!: string;
+  @Input() linkCard!: string;
 
   organizarClasseSeta(): string {
-    if (true) {
+    let nomeClasse = 'cardLicao'; // Sempre inclui a classe base
+
+    if (this.indiceUnidade % 2 === 0) {
       switch (this.indiceBotao) {
         case 0:
-          return '';
+          break;
         case 1:
-          return 'l1';
+          nomeClasse += ' l1';
+          break;
         case 2:
-          return 'l2';
+          nomeClasse += ' l2';
+          break;
         case 3:
-          return 'l1';
+          nomeClasse += ' l1';
+          break;
         case 4:
-          return '';
-        default:
-          return '';
+          break;
       }
     } else {
       switch (this.indiceBotao) {
         case 0:
-          return '';
+          break;
         case 1:
-          return 'r1';
+          nomeClasse += ' r1';
+          break;
         case 2:
-          return 'r2';
+          nomeClasse += ' r2';
+          break;
         case 3:
-          return 'r1';
+          nomeClasse += ' r1';
+          break;
         case 4:
-          return '';
-        default:
-          return '';
+          break;
       }
     }
+
+    const corClasse = ` cor${(this.indiceUnidade % 4) + 1}Card cor${(this.indiceUnidade % 4) + 1}Seta`;
+    return nomeClasse + corClasse;
   }
+
 }

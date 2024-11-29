@@ -3,6 +3,7 @@ export interface Topico {
   id_unidade: number;
   nome: string;
   descricao: string;
+  data: string;
   duracao: number;
   icone: string;
   link: string;

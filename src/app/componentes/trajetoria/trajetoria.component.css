@@ -35,7 +35,6 @@
   margin-left: 5%;
   height: 60px;
 
-  background-color: var(--unidade1);
   color: var(--texto);
   border-radius: 10px;
   padding: 10px;
@@ -61,7 +60,6 @@
 }
 
 .botaoLicao {
-  background-color: var(--unidade1);
   color: var(--texto);
 
   width: 80px;
@@ -81,8 +79,9 @@
 }
 
 .botao_icone {
-  font-size: 30px;
-  font-weight: bold;
+  width: 100%;
+  /* font-size: 30px; */
+  /* font-weight: bold; */
 }
 
 .botao_sombra {
