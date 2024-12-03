@@ -19,7 +19,7 @@ export class PrincipalComponent {
   constructor() { }
 
   ngOnInit(): void {
-    this.opcaoEscolhida = this.opcoesMenu[1];
+    this.opcaoEscolhida = this.opcoesMenu[0];
   }
 
   selecionarOpcao(opcao: string): void {
