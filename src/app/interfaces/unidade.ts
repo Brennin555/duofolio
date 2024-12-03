@@ -5,5 +5,6 @@ export interface Unidade {
   nome: string;
   periodo: string;
   topicos: Topico[];
+  nomeImagem: string;
 
 }

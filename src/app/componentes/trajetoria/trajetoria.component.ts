@@ -106,6 +106,14 @@ export class TrajetoriaComponent {
 
   }
 
+  positionImg(i: number): string {
+    if(i % 2 == 0){
+      return 'imgUnidadeDir';
+    }else{
+      return 'imgUnidadeEsq';
+    }
+  }
+
   criarUnidade() {
 
     // ------------------------------------------------- 2021 -------------------------------------------------
@@ -114,6 +122,7 @@ export class TrajetoriaComponent {
     this.unidade.nome = 'Faculdade e pandemia';
     this.unidade.periodo = "2021";
     this.unidade.topicos = [];
+    this.unidade.nomeImagem = 'assets/images/testeunit1.png';
 
     this.topico = {} as Topico;
     this.topico.id = 0;
@@ -172,6 +181,7 @@ export class TrajetoriaComponent {
     this.unidade.nome = 'Itajubá e Asimov Jr.';
     this.unidade.periodo = "2022";
     this.unidade.topicos = [];
+    this.unidade.nomeImagem = 'assets/images/testeunit2.png';
 
     this.topico = {} as Topico;
     this.topico.id = 0;
@@ -233,6 +243,7 @@ export class TrajetoriaComponent {
     this.unidade.nome = 'Novos desafios e responsabilidades';
     this.unidade.periodo = "2023";
     this.unidade.topicos = [];
+    this.unidade.nomeImagem = 'assets/images/testeunit3.png';
 
     this.topico = {} as Topico;
     this.topico.id = 0;
@@ -291,6 +302,7 @@ export class TrajetoriaComponent {
     this.unidade.nome = 'Grandes mudanças e novidades';
     this.unidade.periodo = "2024";
     this.unidade.topicos = [];
+    this.unidade.nomeImagem = 'assets/images/testeunit4.png';
 
     this.topico = {} as Topico;
     this.topico.id = 1;
