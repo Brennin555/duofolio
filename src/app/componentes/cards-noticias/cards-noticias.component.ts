@@ -37,7 +37,7 @@ export class CardsNoticiasComponent {
       porcentagemCompleta: 0
     }
 
-    this.noticia.totalDias = this.contarDias('2021-05-01', '2025-12-20');
+    this.noticia.totalDias = this.contarDias(this.noticia.dataInicio, this.noticia.dataFim);
     this.noticia.restante = this.contarDiasRestantes(this.noticia.dataFim);
     this.noticia.porcentagemCompleta = this.calcularPorcentagemCompleta();
 
@@ -68,7 +68,7 @@ export class CardsNoticiasComponent {
       porcentagemCompleta: 0
     }
 
-    this.noticia.totalDias = this.contarDias('2021-05-01', '2025-12-20');
+    this.noticia.totalDias = this.contarDias(this.noticia.dataInicio, this.noticia.dataFim);
     this.noticia.restante = this.contarDiasRestantes(this.noticia.dataFim);
     this.noticia.porcentagemCompleta = this.calcularPorcentagemCompleta();
 
