@@ -4,6 +4,7 @@ import { PrincipalComponent } from './pages/principal/principal.component';
 
 const routes: Routes = [
   { path: 'principal', component: PrincipalComponent },
+  { path: '', redirectTo: '/principal', pathMatch: 'full' }
 ];
 
 
