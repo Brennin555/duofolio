@@ -1,5 +1,5 @@
 <div class="cardNoticia">
-	<h2 class="tituloNoticia">Missões:</h2>
+	<h2 class="tituloNoticia">Missões Faculdade:</h2>
 	<div *ngFor="let noticia of noticias">
 		<div class="flex centralizar missao">
 			<img class="icone"
@@ -11,6 +11,27 @@
 						class="progresso">
 						<span class="progresso-texto">
 							{{noticia.totalDias - noticia.restante }} / {{ noticia.totalDias }}
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="cardNoticia">
+	<h2 class="tituloNoticia">Metas Portfólio:</h2>
+	<div *ngFor="let meta of metas">
+		<div class="flex centralizar missao">
+			<img class="icone"
+				src="../../../assets/icons/{{meta.icone}}">
+			<div class="missao">
+				<h3>{{meta.titulo}}</h3>
+				<div class="barra-progresso">
+					<div [style.width.%]="meta.porcentagemCompleta"
+						class="progresso">
+						<span class="progresso-texto">
+							{{meta.totalItens - meta.restante }} / {{ meta.totalItens }}
 						</span>
 					</div>
 				</div>
