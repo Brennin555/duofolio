@@ -18,6 +18,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CardLicaoComponent } from './componentes/card-licao/card-licao.component';
 import { ProjetosComponent } from './componentes/projetos/projetos.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
+import { ContatosComponent } from './componentes/contatos/contatos.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PerfilComponent } from './componentes/perfil/perfil.component';
     CardsNoticiasComponent,
     CardLicaoComponent,
     ProjetosComponent,
-    PerfilComponent
+    PerfilComponent,
+    ContatosComponent
   ],
   imports: [
     BrowserModule,
