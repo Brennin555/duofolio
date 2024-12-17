@@ -105,7 +105,7 @@ export class CardsNoticiasComponent {
       id: 2,
       titulo: 'Projetos',
       icone: 'icons8-fire-64_2.png',
-      restante: 0,
+      restante: 2,
       totalItens: 11,
       porcentagemCompleta: 0
     }
@@ -117,7 +117,7 @@ export class CardsNoticiasComponent {
       id: 4,
       titulo: 'Contato',
       icone: 'icons8-fire-64_2.png',
-      restante: 1,
+      restante: 0,
       totalItens: 1,
       porcentagemCompleta: 0
     }

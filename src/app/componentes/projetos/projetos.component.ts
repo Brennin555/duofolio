@@ -71,7 +71,7 @@ export class ProjetosComponent {
     this.projeto.nome = 'Aplicativo: Lista de tarefas';
     this.projeto.descricao = 'Aplicativo desenvolvido em capacitação de Ionic, Angular e Firebase';
     this.projeto.imagem = 'listatarefas';
-    this.projeto.link = 'https://github.com/Brennin555/Aplicativo-Lista-com-Autentiacao-Firebase';//arrumar
+    this.projeto.link = 'https://github.com/Brennin555/Aplicativo-Lista-com-Autentiacao-Firebase';
     this.grupoProjetos.projetos.push(this.projeto);
 
     this.projeto = {} as Projeto;
@@ -79,7 +79,7 @@ export class ProjetosComponent {
     this.projeto.nome = 'Portfólio ilusório';
     this.projeto.descricao = 'Portfólio desenvolvido em capacitação de HTML e CSS';
     this.projeto.imagem = 'curriculo';
-    this.projeto.link = 'https://youtu.be/VUXvX0MkT_U?si=PfP9i1JtbSUY68Bj';//arrumar
+    this.projeto.link = 'https://github.com/Brennin555/MeuPortfolio';
     this.grupoProjetos.projetos.push(this.projeto);
 
     this.projetosGeral.push(this.grupoProjetos); // estou adicionando aqui chat
@@ -102,7 +102,7 @@ export class ProjetosComponent {
     this.projeto.nome = 'Jogo FreeCell desenvolvido em C (com ponteiros)';
     this.projeto.descricao = 'Projeto final da disciplina de "Estrutura de Dados"';
     this.projeto.imagem = 'icons8-cartas-64';
-    this.projeto.link = 'https://youtu.be/VUXvX0MkT_U?si=PfP9i1JtbSUY68Bj';//arrumar
+    this.projeto.link = 'https://github.com/Brennin555/Jogo-FreeCell-2022-/';
     this.grupoProjetos.projetos.push(this.projeto);
 
     this.projeto = {} as Projeto;
